@@ -1,0 +1,14 @@
+@keyframes keep_rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform:translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.VPImage {
+  &.image-src {
+    animation: keep_rotate 3s infinite linear;
+  }
+}

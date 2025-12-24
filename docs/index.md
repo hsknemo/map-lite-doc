@@ -19,8 +19,16 @@ hero:
 features:
   - title: MapBox
     details: 一个地图
+    icon:
+      src: /img/mapbox.svg
   - title: Openlayers
+    icon:
+      src: /img/OpenLayers.svg
     details: 另外一个地图
+  - title: 融合
+    icon:
+        src: /img/tj.svg
+    details: 二者融合，非侵入性
 ---
 
 <script setup>

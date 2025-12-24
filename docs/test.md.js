@@ -31,6 +31,10 @@ const mdContent = {
         label: '默认值',
         prop: 'defaultValue',
       },
+      {
+        label: '所属生效范围',
+        prop: 'rangeName',
+      },
     ],
     数据: [
       {
@@ -74,6 +78,14 @@ const mdContent = {
         type: 'Array',
         params: '[{name: \'全局唯一的图片名称\'}， value: 图片路径}]',
         defaultValue: '[]',
+      },
+      {
+        key: 'imgIconSize',
+        desc: 'mapbox 控制点位图片大小',
+        type: 'Number',
+        params: '',
+        defaultValue: 'null',
+        rangeName: "UseMapBox"
       },
     ]
   },
@@ -222,9 +234,6 @@ const mdContent = {
     ]
   },
 
-  用原样输出: `
-    文档编辑于2025年12月24日09:37:23
-  `
 }
 
 const content = {

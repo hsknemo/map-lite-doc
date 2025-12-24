@@ -7,6 +7,7 @@ export default defineConfig({
   description: "Mapbox and Openlayers",
   themeConfig: {
     logo: '/img/tj.svg',
+    lastUpdated: true,
     search: {
       provider: 'local'
     },

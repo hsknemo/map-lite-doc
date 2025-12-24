@@ -82,14 +82,15 @@ const findGlobalLayer = (layerName, key) => {
  ```
 ## 入参介绍
 
-  | 参数 | 说明 | 类型 | 可选值 | 默认值 |
-  | --- | --- | --- | --- | --- |
-  | name | 图层名称 必传字段 也是定义图层的名称 | String |  |  |
-| minZoom | 图层最小缩放级别 | Number |  | 10 |
-| maxZoom | 图层最大缩放级别 | Number |  | 24 |
-| visible | 图层是否可见 | String/Boolean | true、false、visibility、none | true |
-| showTip | 点击当前 图层元素是否弹出自定义页面 | Boolean | true、false | true |
-| imgData | mapbox 类型地图加载点位图片 | Array | [{name: '全局唯一的图片名称'}， value: 图片路径}] | [] |
+  | 参数 | 说明 | 类型 | 可选值 | 默认值 | 所属生效范围 |
+  | --- | --- | --- | --- | --- | --- |
+  | name | 图层名称 必传字段 也是定义图层的名称 | String |  |  |  |
+| minZoom | 图层最小缩放级别 | Number |  | 10 |  |
+| maxZoom | 图层最大缩放级别 | Number |  | 24 |  |
+| visible | 图层是否可见 | String/Boolean | true、false、visibility、none | true |  |
+| showTip | 点击当前 图层元素是否弹出自定义页面 | Boolean | true、false | true |  |
+| imgData | mapbox 类型地图加载点位图片 | Array | [{name: '全局唯一的图片名称'}， value: 图片路径}] | [] |  |
+| imgIconSize | mapbox 控制点位图片大小 | Number |  | null | UseMapBox |
   
 ## 属性介绍
 
@@ -116,5 +117,3 @@ const findGlobalLayer = (layerName, key) => {
   | --- | --- | --- | --- | --- |
   | findGlobalLayer | 查找图层 | Function |  |  |
   
-
-文档编辑于2025年12月24日09:37:23

@@ -24,6 +24,13 @@ export default defineConfig({
           { text: '起步', link: '/quike-start' },
           { text: '代码介绍', link: '/core-intro' },
           { text: '快速使用', link: '/fast-use' },
+          { text: '火速入门视频教程', link: '/classes-source' },
+          { text: '使用', items: [
+              {
+                text: '如何创建tips',
+                link: 'create-tips'
+              }
+            ] },
         ]
       }
     ],

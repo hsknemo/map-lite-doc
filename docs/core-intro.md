@@ -49,7 +49,35 @@
   loadData() {
 
   }
+
+  // 设置图层显示隐藏
+  setVisible(bool) {
+    window.MAP_OBJ.setVisible(bool, this)
+    this.setVisibleRunOtherFunc(bool)
+  }
+
+  // 设置图层显示隐藏时运行其他方法
+  setVisibleRunOtherFunc(bool) {
+
+  }
+
+  // 返回当前使用的地图实例
+  useMap() {
+    return window.MAP_OBJ.map
+  }
 }
+
+
+/**
+ * 查找图层
+ * @param layerName 图层名称
+ * @param key 图层对象里面的某一个属性
+ */
+const findGlobalLayer = (layerName, key) => {
+}
+
+
+
  
  ```
 ## 入参介绍
@@ -76,6 +104,17 @@
   | --- | --- | --- | --- | --- |
   | init | 初始化继承自动调用方法 | Function |  |  |
 | loadData | 加载数据方法，自行赋值cacheData | Function |  |  |
+| setVisible | 控制图层显示隐藏 | Function |  |  |
+| setVisibleRunOtherFunc | 设置图层显示隐藏时运行其他方法 | Function |  |  |
+| useMap | 返回当前使用的地图实例 | Function |  |  |
+  
+## 全局方法
+> 📢 注意：以下列举方法为``widnows`` 全局挂载 
+
+
+  | 参数 | 说明 | 类型 | 可选值 | 默认值 |
+  | --- | --- | --- | --- | --- |
+  | findGlobalLayer | 查找图层 | Function |  |  |
   
 
 文档编辑于2025年12月24日09:37:23

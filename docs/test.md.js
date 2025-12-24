@@ -119,6 +119,7 @@ const mdContent = {
       },
     ]
   },
+
   输出4用二级标题: '方法介绍',
   输出4用表格: {
     列: [
@@ -158,8 +159,69 @@ const mdContent = {
         params: '',
         defaultValue: '',
       },
+
+      {
+        key: 'setVisible',
+        desc: '控制图层显示隐藏',
+        type: 'Function',
+        params: '',
+        defaultValue: '',
+      },
+
+      {
+        key: 'setVisibleRunOtherFunc',
+        desc: '设置图层显示隐藏时运行其他方法',
+        type: 'Function',
+        params: '',
+        defaultValue: '',
+      },
+
+      {
+        key: 'useMap',
+        desc: '返回当前使用的地图实例',
+        type: 'Function',
+        params: '',
+        defaultValue: '',
+      },
     ]
   },
+
+  输出5用二级标题: '全局方法',
+  输出5用块引:'📢 注意：以下列举方法为``widnows`` 全局挂载 ',
+  输出5用表格: {
+    列: [
+      {
+        label: '参数',
+        prop: 'key',
+      },
+      {
+        label: '说明',
+        prop: 'desc',
+      },
+      {
+        label: '类型',
+        prop: 'type',
+      },
+      {
+        label: '可选值',
+        prop: 'params',
+      },
+      {
+        label: '默认值',
+        prop: 'defaultValue',
+      },
+    ],
+    数据: [
+      {
+        key: 'findGlobalLayer',
+        desc: '查找图层',
+        type: 'Function',
+        params: '',
+        defaultValue: '',
+      },
+    ]
+  },
+
   用原样输出: `
     文档编辑于2025年12月24日09:37:23
   `

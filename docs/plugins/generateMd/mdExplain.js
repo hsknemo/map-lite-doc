@@ -55,7 +55,14 @@ const addWatchFile = fileName => {
         console.log('change txt', filePath)
         console.log(linkFileSet, 'linkFileSet')
         let link_f_set_arr = Array.from(linkFileSet)
+        console.log('run....', link_f_set_arr)
         let _filePath = link_f_set_arr.filter(item => item.includes(fileName))
+        console.log('文件。。。。', _filePath)
+        if (!_filePath.length) {
+          console.log('没有文件')
+          _filePath = link_f_set_arr
+        }
+        console.log('run 过滤....', _filePath)
         if (!_filePath.length) return
         EventEmit.emit('generate-link-file-change', _filePath[0])
       })

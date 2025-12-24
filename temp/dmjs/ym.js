@@ -45,4 +45,32 @@ class BaseLayer {
   loadData() {
 
   }
+
+  // 设置图层显示隐藏
+  setVisible(bool) {
+    window.MAP_OBJ.setVisible(bool, this)
+    this.setVisibleRunOtherFunc(bool)
+  }
+
+  // 设置图层显示隐藏时运行其他方法
+  setVisibleRunOtherFunc(bool) {
+
+  }
+
+  // 返回当前使用的地图实例
+  useMap() {
+    return window.MAP_OBJ.map
+  }
 }
+
+
+/**
+ * 查找图层
+ * @param layerName 图层名称
+ * @param key 图层对象里面的某一个属性
+ */
+const findGlobalLayer = (layerName, key) => {
+}
+
+
+

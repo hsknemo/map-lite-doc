@@ -1,19 +1,71 @@
+// 变量
+.dark:root{
+  --tj-color: #fff;
+  --img-filter: invert(1) drop-shadow(2px 4px 6px #fff);
+
+}
+:root{
+  --tj-color: #000;
+  --img-filter: drop-shadow(2px 4px 6px #000)
+}
+
 @keyframes keep_rotate {
   from {
-    transform: translate(-50%, -50%) rotate(0deg);
+    transform:  rotate(0deg);
   }
   to {
-    transform:translate(-50%, -50%) rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 .VPImage {
   &.image-src {
     animation: keep_rotate 3s infinite linear;
+    translate: -50% -50%;
+    filter: var(--img-filter);
   }
 }
 
 
-.dark:root{
-  --tj-color: #fff;
+
+// 工具类
+
+@mixin flexStyle($align:'center', $justContent:'space-around') {
+  display: flex;
+  align-items: $align;
+  justify-content: $justContent;
+}
+
+
+// 团队页面样式
+.team_tit {
+  @include flexStyle(center, center);
+  img {
+    margin-left: 10px;
+    --size: 40px;
+    width: var(--size);
+    height: var(--size);
+    filter: var(--img-filter);
+    animation: keep_rotate 3s infinite linear;
+  }
+}
+
+
+// 脚步copyright
+.copyright {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #999;
+  &, & a {
+    @include flexStyle(center, center);
+  }
+
+  a {
+    margin-left: 10px;
+    gap: 5px;
+    img {
+      gap: 5px;
+    }
+  }
+
 }

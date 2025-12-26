@@ -1,4 +1,4 @@
-# 🚀 MapLite 说明 
+# 🚀 MapLite <Badge type="tip" text="^1.0.0"></Badge> 说明 
 
 这个项目融合了Mapbox 及 Openlayers 两种地图库操作，提供了一个简单的封装的兼容层，一套写法兼容两种地图库.
 ## 历史原因

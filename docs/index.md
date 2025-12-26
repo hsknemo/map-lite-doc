@@ -11,13 +11,13 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /quike-start
+      link: /start/quike-start
     - theme: alt
       text: 快速使用
-      link: /fast-use
+      link: /start/fast-use
 
 features:
-  - title: MapBox
+  - title: MapBox 
     details: 一个地图
     icon:
       src: /img/mapbox.svg
@@ -29,25 +29,10 @@ features:
     icon:
         src: /img/tj.svg
     details: 二者融合，非侵入性
+    
 ---
 
-<script setup>
-import { VPTeamMembers } from 'vitepress/theme'
 
-const members = [
-  {
-    avatar: 'https://avatars.githubusercontent.com/u/42964542?v=4',
-    name: 'HskNemo',
-    title: 'Creator',
-    links: [
-      { icon: 'github', link: 'https://github.com/hsknemo' },
-    ]
-  },
-]
-</script>
-
-# Our Team
-
-Say hello to our awesome team.
-
-<VPTeamMembers size="small" :members />
+<footer class="copyright">
+  MIT - Copyright 2025-Present <a href="https://github.com/hsknemo">Hsknemo <img src="https://api.iconify.design/simple-icons/github.svg"/></a> 
+</footer>

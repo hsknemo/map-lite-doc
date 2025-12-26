@@ -2,7 +2,7 @@
 
 > 图层上声明 getHtml 方法，返回html字符串
 ```js
-import { BaseLayer } from '/MapLite/layer/layer.js'
+import { BaseLayer } from '/MapLite/core/Layer/layer.js'
 export class TestLayer extends BaseLayer {
   constructor(props) {
     super({

@@ -22,7 +22,7 @@ export const speicalSetting = {
 ## 调用方式
 
  ```js 
- import specialCore from '@/MapLite/Special/specialCore.js'
+ import specialCore from '@/MapLite/core/Special/specialCore.js'
 specialCore.open('专题名称')
  
  ```

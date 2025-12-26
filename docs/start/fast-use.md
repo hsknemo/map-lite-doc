@@ -57,7 +57,7 @@ export class TestLayer extends BaseLayer {
 准备一个``main.js``
 
 ```js
-import { MapEnumType } from '/MapLite/MapEnumType'
+import { MapEnumType } from '/MapLite/core/event/MapEnumType'
 import TestLayer from '../TestLayer'
 
 window.addEventListener(MapEnumType.mapLoadedEvent, () => {

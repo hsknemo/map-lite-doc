@@ -16,6 +16,14 @@ export default defineConfig({
             {text: '主页', link: '/'},
             {text: '起步', link: '/start/quike-start'},
             {text: '团队', link: '/team'},
+            {
+                text: '场景',
+                items: [
+                    {text: 'mapbox场景', link: '/demo/mapbox/init'},
+                    {text: 'openlayers场景', link: '/demo/openlayers/init'},
+                ]
+            },
+
         ],
 
         sidebar: {

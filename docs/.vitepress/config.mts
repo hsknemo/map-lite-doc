@@ -44,6 +44,14 @@ export default defineConfig({
                                 {
                                     text: '创建一个专题',
                                     link: '/start/special-config'
+                                },
+                                {
+                                    text: '定位',
+                                    link: '/start/fitbouds'
+                                },
+                                {
+                                    text: '点位图标切换',
+                                    link: '/start/point-cut-image'
                                 }
                             ]
                         },

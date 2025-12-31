@@ -24,7 +24,7 @@ features:
   - title: Openlayers
     icon:
       src: /img/OpenLayers.svg
-    details: 另外一个地图
+    details: 另外一个地图 v10.7.0
   - title: 融合
     icon:
         src: /img/tj.svg
